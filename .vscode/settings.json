@@ -17,6 +17,12 @@
         },
     },
     "isort.args":["--profile", "black"],
+    // SQL
+    "[sql]": {
+        "editor.defaultFormatter": "dorzey.vscode-sqlfluff"
+    },
+    "sqlfluff.linter.run": "onSave",
+    "sqlfluff.linter.diagnosticSeverity": "warning",
     // Spacing
     "editor.indentSize": "tabSize",
     "editor.detectIndentation": false,

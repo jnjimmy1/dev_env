@@ -7,7 +7,7 @@ This repo contains my personal setup for development.
 1. [SQL](#sql)
 
 ## VSCode
-For VSCode specific settings, there is a config file located at `.vscode/settings.json`. Generally, this file contains settings to correctly utilize any VSCode extensions as well as set up rulers to get a sense of character limits.
+For VSCode specific settings, there is a config file located at [`.vscode/settings.json`](https://github.com/jnjimmy1/dev_env/blob/main/.vscode/settings.json). Generally, this file contains settings to correctly utilize any VSCode extensions as well as set up rulers to get a sense of character limits.
 
 ___
 

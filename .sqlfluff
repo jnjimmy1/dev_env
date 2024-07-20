@@ -1,11 +1,13 @@
 # Largely copied from GitLab Data Team's own sqlfluff config
 # https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/.sqlfluff
-
+# https://docs.sqlfluff.com/en/stable/rules.html
 [sqlfluff]
 dialect = postgres
-templater = dbt
-exclude_rules = L016,L031,L034
+templater = jinja
+exclude_rules = L031,L034
 large_file_skip_byte_limit = 25000
+max_line_length = 80
+
 
 [sqlfluff:layout:type:alias_expression]
 # We want non-default spacing _before_ the alias expressions.
@@ -19,6 +21,11 @@ align_within = select_clause
 # when we hit brackets is usually a good rule of thumb for this
 # configuration.
 align_scope = bracketed
+
+[sqlfluff:layout:type:data_type]
+spacing_before = align
+align_within = statement
+align_scope = file
 
 [sqlfluff:indentation]
 tab_space_size = 2

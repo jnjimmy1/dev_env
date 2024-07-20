@@ -1,27 +1,14 @@
-# dev_env
-Boilerplate development environment
+# Welcome
+This repo contains my personal setup for development with Python and SQL. See [docs](https://github.com/jnjimmy1/dev_env/blob/main/docs/main.md) for in-depth documentation.
 
-# Planned Tech Stack
+## Overview
 - Python
-  - isort and black formatters
+  - `isort` and `black` formatting
   - pre-commit
 
 - SQL
-  - sqlfluff linter/formatter
+  - `sqlfluff` linting and formatting
   - pre-commit
-
-
-```sh
-conda create -n dev -y python,black,isort,ipykernel,pandas,numpy,boto3
-conda activate dev
-pip install sqlfluff
-
-conda remove -n dev -y --all
-
-conda env export --from-history > env.yml
-
-conda env create -f environment.yml
-```
 
 # Installation Steps
 - Install VSCode and the following extensions
