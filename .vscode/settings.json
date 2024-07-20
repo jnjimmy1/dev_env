@@ -1,0 +1,25 @@
+{   
+    // General
+    "editor.rulers": [
+        80,
+        {
+            "column": 120,
+            "color": "#ff0000"
+        }
+    ],
+    // Python
+    "notebook.formatOnSave.enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+        },
+    },
+    "isort.args":["--profile", "black"],
+    // Spacing
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+}
